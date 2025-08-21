@@ -19,7 +19,7 @@
   // -------- 1) CV download --------
   // EXPECTATION: place your CV at /public/cv/Chinthaginjala_Pavankalyan_CV.pdf
   // In HTML, the button can stay <a href="/cv/Chinthaginjala_Pavankalyan_CV.pdf" class="btn cv-btn">Download CV</a>
-  const cvBtn = $('.home .btn[href$="cv.pdf"], .home .cv-btn');
+  const cvBtn = $('.home .[href$="cv.pdf"], .home .cv-');
   if (cvBtn) {
     // Ensure it’s a same‑origin URL and force download attribute
     try {
@@ -180,3 +180,6 @@
     });
   }
 })();
+
+
+
