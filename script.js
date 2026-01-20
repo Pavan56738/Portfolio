@@ -26,7 +26,7 @@
       const a = cvBtn;
       const url = new URL(a.getAttribute('href'), window.location.origin);
       // Use a filename if not already set
-      const fileName = url.pathname.split('/').pop() || 'cv.pdf';
+      const fileName = url.pathname.split('/').pop() || 'Pavan Kalyan_Java Developer_Resume.pdf';
       a.setAttribute('href', url.pathname); // keep it path‑relative for Vercel
       a.setAttribute('download', fileName);
       a.setAttribute('type', 'application/pdf');
